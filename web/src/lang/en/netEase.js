@@ -1,0 +1,47 @@
+export default {
+  // 网易IM
+  NetEaseIM: {
+    Actions: 'Actions',
+    Add: 'Add',
+    Edit: 'Edit',
+    Delete: 'Delete',
+    Index: 'SerialNum',
+    Url: 'IM Backend Request',
+    RoomURL: 'Voice Room URL',
+    IMUrl: 'IM URL',
+    AppKey: 'appKey',
+    AppSecret: 'appSecret',
+    PayUrl: 'Recharge Request',
+    WithdrawUrl: 'Withdraw Request',
+    ClubWithdrawGoldUrl: 'Get User Gold Amount',
+    ManualTransferUrl: 'Manual Transfer Recharge/Withdraw',
+    PhoneUrl: 'SMS/Email',
+    RecommendShareUrl: 'Share/Recommend URL',
+
+    PlaceholderUrl: 'Please enter IM backend request URL',
+    PlaceholderRoomURL: 'Please enter voice room URL',
+    PlaceholderIMUrl: 'Please enter IM URL',
+    PlaceholderAppSecret: 'Please enter appSecret',
+    PlaceholderAppKey: 'Please enter appKey',
+    PlaceholderPayUrl: 'Please enter recharge request URL',
+    PlaceholderWithdrawUrl: 'Please enter withdraw request URL',
+    PlaceholderClubWithdrawGoldUrl: 'Please enter get user gold amount URL',
+    PlaceholderManualTransferUrl: 'Please enter manual transfer recharge/withdraw URL',
+    PlaceholderPhoneUrl: 'Please enter SMS/Email URL',
+    PlaceholderRecommendShareUrl: 'Please enter share/recommend URL',
+
+    UrlRequired: 'Please enter IM backend request URL',
+    RoomURLRequired: 'Please enter voice room URL',
+    IMUrlRequired: 'Please enter IM URL',
+    AppSecretRequired: 'Please enter appSecret',
+    AppKeyRequired: 'Please enter appKey',
+    PayUrlRequired: 'Please enter recharge request URL',
+    WithdrawUrlRequired: 'Please enter withdraw request URL',
+    ClubWithdrawGoldUrlRequired: 'Please enter get user gold amount URL',
+    ManualTransferUrlRequired: 'Please enter manual transfer recharge/withdraw URL',
+    PhoneUrlRequired: 'Please enter SMS/Email URL',
+    RecommendShareUrlRequired: 'Please enter share/recommend URL',
+
+    CreateOrUpdateSuccess: 'Created/Updated successfully'
+  },
+}

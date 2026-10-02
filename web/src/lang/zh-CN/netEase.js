@@ -1,0 +1,47 @@
+export default {
+  // 网易IM
+  NetEaseIM: {
+    Actions: '操作',
+    Add: '新增',
+    Edit: '编辑',
+    Delete: '删除',
+    Index: '序号',
+    Url: 'IM后端请求',
+    RoomURL: '语音房URL',
+    IMUrl: 'IM地址',
+    AppKey: 'appKey',
+    AppSecret: 'appSecret',
+    PayUrl: '充值请求',
+    WithdrawUrl: '提现请求',
+    ClubWithdrawGoldUrl: '获取用户金币额度',
+    ManualTransferUrl: '手动转账充值/提现',
+    PhoneUrl: '短信/邮箱',
+    RecommendShareUrl: '分享/推荐地址',
+
+    PlaceholderUrl: '请输入IM后端请求地址',
+    PlaceholderRoomURL: '请输入语音房URL',
+    PlaceholderIMUrl: '请输入IM地址',
+    PlaceholderAppSecret: '请输入appSecret',
+    PlaceholderAppKey: '请输入appKey',
+    PlaceholderPayUrl: '请输入充值请求地址',
+    PlaceholderWithdrawUrl: '请输入提现请求地址',
+    PlaceholderClubWithdrawGoldUrl: '请输入获取用户金币额度地址',
+    PlaceholderManualTransferUrl: '请输入手动转账充值/提现地址',
+    PlaceholderPhoneUrl: '请输入短信/邮箱地址',
+    PlaceholderRecommendShareUrl: '请输入分享/推荐地址',
+
+    UrlRequired: '请输入IM后端请求地址',
+    RoomURLRequired: '请输入语音房URL',
+    IMUrlRequired: '请输入IM地址',
+    AppSecretRequired: '请输入appSecret',
+    AppKeyRequired: '请输入appKey',
+    PayUrlRequired: '请输入充值请求地址',
+    WithdrawUrlRequired: '请输入提现请求地址',
+    ClubWithdrawGoldUrlRequired: '请输入获取用户金币额度地址',
+    ManualTransferUrlRequired: '请输入手动转账充值/提现地址',
+    PhoneUrlRequired: '请输入短信/邮箱地址',
+    RecommendShareUrlRequired: '请输入分享/推荐地址',
+
+    CreateOrUpdateSuccess: '创建/更改成功'
+  },
+}

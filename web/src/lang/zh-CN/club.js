@@ -1,0 +1,111 @@
+export default {
+  // 俱乐部
+  Club: {
+    Search: {
+      ClubIdLabel: '俱乐部ID',
+      ClubNameLabel: '俱乐部名称',
+      InviteCodeLabel: '邀请码',
+      InviteCodePlaceholder: '请输入邀请码',
+      MasterIdLabel: '主席ID',
+      Placeholder: '搜索条件'
+    },
+    Actions: {
+      Create: '新增',
+      Edit: '编辑',
+      Delete: '删除',
+      BatchDelete: '批量删除',
+      ResetInviteCode: '重置邀请码',
+      RemoveAvatar: '移除头像'
+    },
+    Table: {
+      Index: '序号',
+      Id: 'ID',
+      ClubId: '俱乐部ID',
+      Avatar: '头像',
+      Group: '分组',
+      ClubName: '俱乐部名称',
+      MasterId: '主席ID',
+      InviteCode: '邀请码',
+      MemberCount: '成员人数',
+      CanApply: '能否申请加入',
+      CanSearch: '能否被搜索',
+      CreatedAt: '创建时间',
+      PassWords: '库存密码',
+      TablePower: '桌子管理权限',
+      Actions: '操作',
+      View: '查看'
+    },
+    Options: {
+      Can: '能',
+      Cannot: '不能',
+      Has: '有',
+      None: '无'
+    },
+    Drawer: {
+      TitleCreate: '新增俱乐部',
+      TitleEdit: '编辑俱乐部',
+      ClubIdLabel: '俱乐部ID：',
+      ClubIdPlaceholder: '请输入俱乐部ID（留空自动分配，须≥1000000）',
+      GroupIdLabel: '分组：',
+      GroupIdPlaceholder: '请输入分组',
+      GroupSelectPlaceholder: '请选择分组',
+      ClubNameLabel: '俱乐部名称：',
+      ClubNamePlaceholder: '请输入俱乐部名称',
+      MasterIdLabel: '主席ID：',
+      MasterIdPlaceholder: '请输入主席UserID',
+      CanApplyLabel: '能否申请加入',
+      CanSearchLabel: '能否被搜索',
+      CreateTimeLabel: '创建时间：',
+      CreateTimePlaceholder: '选择日期',
+      PassWordsLabel: '库存密码：',
+      PassWordsPlaceholder: '请输入库存密码（必填）',
+      TablePowerLabel: '桌子管理权限',
+      InviteCodeLabel: '邀请码：',
+      InviteCodePlaceholder: '创建后自动生成8位邀请码',
+      InviteCodeAuto: '留空自动生成',
+      AvatarLabel: '俱乐部头像：',
+      UploadAvatar: '上传头像'
+    },
+    Detail: {
+      Title: '俱乐部详情',
+      Id: 'ID',
+      Avatar: '俱乐部头像',
+      ClubId: '俱乐部ID',
+      GroupId: '分组',
+      ClubName: '俱乐部名称',
+      MasterId: '主席ID',
+      InviteCode: '邀请码',
+      MemberCount: '成员人数',
+      MemberUnit: '人',
+      CanApply: '能否申请加入',
+      CanSearch: '能否被搜索',
+      CreateTime: '创建时间',
+      PassWords: '库存密码',
+      TablePower: '桌子管理权限'
+    },
+    Messages: {
+      ConfirmDelete: '确定要删除该俱乐部吗？此操作不可恢复！',
+      DeleteSuccess: '删除成功',
+      SelectDeleteWarning: '请选择要删除的数据',
+      CreateOrUpdateSuccess: '操作成功',
+      FetchGroupFailed: '获取分组列表失败',
+      ConfirmResetInviteCode: '确定要重置邀请码吗？旧邀请码将立即失效！',
+      ResetInviteCodeSuccess: '邀请码重置成功',
+      AvatarFormatError: '头像图片只能是 JPG/PNG/GIF/WebP 格式！',
+      AvatarSizeError: '头像图片大小不能超过 5MB！',
+      UploadSuccess: '头像上传成功',
+      UploadFailed: '头像上传失败',
+      ConfirmRemoveAvatar: '确定要移除俱乐部头像吗？'
+    },
+    Validation: {
+      Id: '请输入ID',
+      ClubId: '请输入俱乐部ID',
+      GroupId: '请选择分组',
+      ClubName: '请输入俱乐部名称',
+      MasterId: '请输入主席ID',
+      CreateTime: '请选择创建时间',
+      PassWords: '请输入库存密码',
+      TablePower: '请选择桌子管理权限'
+    }
+  },
+}

@@ -1,0 +1,111 @@
+export default {
+  // 俱乐部
+  Club: {
+    Search: {
+      ClubIdLabel: 'Club ID',
+      ClubNameLabel: 'Club Name',
+      InviteCodeLabel: 'Invite Code',
+      InviteCodePlaceholder: 'Enter invite code',
+      MasterIdLabel: 'President ID',
+      Placeholder: 'Search condition'
+    },
+    Actions: {
+      Create: 'Create',
+      Edit: 'Edit',
+      Delete: 'Delete',
+      BatchDelete: 'Batch Delete',
+      ResetInviteCode: 'Reset Invite Code',
+      RemoveAvatar: 'Remove Avatar'
+    },
+    Table: {
+      Index: 'SerialNum',
+      Id: 'ID',
+      ClubId: 'Club ID',
+      Avatar: 'Avatar',
+      Group: 'Group',
+      ClubName: 'Club Name',
+      MasterId: 'President ID',
+      InviteCode: 'Invite Code',
+      MemberCount: 'Member Count',
+      CanApply: 'Application Allowed',
+      CanSearch: 'Searchable',
+      CreatedAt: 'Created At',
+      PassWords: 'Inventory Password',
+      TablePower: 'Table Management Permission',
+      Actions: 'Actions',
+      View: 'View'
+    },
+    Options: {
+      Can: 'Allowed',
+      Cannot: 'Not Allowed',
+      Has: 'Has',
+      None: 'None'
+    },
+    Drawer: {
+      TitleCreate: 'Add Club',
+      TitleEdit: 'Edit Club',
+      ClubIdLabel: 'Club ID:',
+      ClubIdPlaceholder: 'Enter club ID (leave empty for auto-assign, must be ≥1000000)',
+      GroupIdLabel: 'Group:',
+      GroupIdPlaceholder: 'Enter group',
+      GroupSelectPlaceholder: 'Please select the group',
+      ClubNameLabel: 'Club Name:',
+      ClubNamePlaceholder: 'Please enter the club name',
+      MasterIdLabel: 'President ID:',
+      MasterIdPlaceholder: 'Please enter the president UserID',
+      CanApplyLabel: 'Application Allowed',
+      CanSearchLabel: 'Searchable',
+      CreateTimeLabel: 'Created At:',
+      CreateTimePlaceholder: 'Select date',
+      PassWordsLabel: 'Inventory Password:',
+      PassWordsPlaceholder: 'Please enter the inventory password (required)',
+      TablePowerLabel: 'Table Management Permission',
+      InviteCodeLabel: 'Invite Code:',
+      InviteCodePlaceholder: '8-char invite code will be auto-generated',
+      InviteCodeAuto: 'Leave empty to auto-generate',
+      AvatarLabel: 'Club Avatar:',
+      UploadAvatar: 'Upload Avatar'
+    },
+    Detail: {
+      Title: 'Club Details',
+      Id: 'ID',
+      Avatar: 'Club Avatar',
+      ClubId: 'Club ID',
+      GroupId: 'Group',
+      ClubName: 'Club Name',
+      MasterId: 'President ID',
+      InviteCode: 'Invite Code',
+      MemberCount: 'Member Count',
+      MemberUnit: 'members',
+      CanApply: 'Application Allowed',
+      CanSearch: 'Searchable',
+      CreateTime: 'Created At',
+      PassWords: 'Inventory Password',
+      TablePower: 'Table Management Permission'
+    },
+    Messages: {
+      ConfirmDelete: 'Are you sure you want to delete this club? This action cannot be undone!',
+      DeleteSuccess: 'Deleted successfully',
+      SelectDeleteWarning: 'Please select the data to delete',
+      CreateOrUpdateSuccess: 'Operation successful',
+      FetchGroupFailed: 'Failed to fetch group list',
+      ConfirmResetInviteCode: 'Are you sure you want to reset the invite code? The old code will be immediately invalidated!',
+      ResetInviteCodeSuccess: 'Invite code reset successful',
+      AvatarFormatError: 'Avatar must be in JPG/PNG/GIF/WebP format!',
+      AvatarSizeError: 'Avatar size cannot exceed 5MB!',
+      UploadSuccess: 'Avatar uploaded successfully',
+      UploadFailed: 'Avatar upload failed',
+      ConfirmRemoveAvatar: 'Are you sure you want to remove the club avatar?'
+    },
+    Validation: {
+      Id: 'Please enter the ID',
+      ClubId: 'Please enter the club ID',
+      GroupId: 'Please select the group',
+      ClubName: 'Please enter the club name',
+      MasterId: 'Please enter the president ID',
+      CreateTime: 'Please select the created time',
+      PassWords: 'Please enter the inventory password',
+      TablePower: 'Please select the table management permission'
+    }
+  },
+}
