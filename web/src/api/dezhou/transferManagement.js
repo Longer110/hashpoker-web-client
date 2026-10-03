@@ -53,3 +53,19 @@ export const getPumpList = (params) => {
     params
   })
 }
+
+export const getWithdrawPendingListApi = (params) => {
+  return service({
+    url: '/transferLog/withdrawPending',
+    method: 'get',
+    params
+  })
+}
+
+export const auditWithdrawApi = (data) => {
+  return service({
+    url: '/transferLog/auditWithdraw',
+    method: 'post',
+    data
+  })
+}

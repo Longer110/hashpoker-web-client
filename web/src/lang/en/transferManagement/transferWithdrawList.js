@@ -17,10 +17,17 @@ export default {
       UserId: 'User ID',
       ActualAmount: 'Actual Amount Received',
       ToAddress: 'Withdrawal Address',
+      TxHash: 'TxHash',
       Status: 'Status',
       Remark: 'Remark',
       CreatedAt: 'Created At',
       UpdatedAt: 'Updated At'
+    },
+    Actions: {
+      Copy: 'Copy',
+      CopyOk: 'Copied to clipboard',
+      CopyFail: 'Copy failed',
+      ViewOnChain: 'View on chain'
     },
     Status: {
       Success: 'Success',

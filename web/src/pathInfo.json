@@ -74,6 +74,7 @@
   "/src/view/dezhou/transferManagement/transferManagement.vue": "bannedList",
   "/src/view/dezhou/transferManagement/transferPayList/index.vue": "TransferPayList",
   "/src/view/dezhou/transferManagement/transferWithDrowList/index.vue": "TransferPayList",
+  "/src/view/dezhou/transferManagement/withdrawAudit/index.vue": "WithdrawAudit",
   "/src/view/dezhou/userManagement/tagManagement/index.vue": "TagManagement",
   "/src/view/dezhou/userManagement/winningAndLosingRanking/winningAndLosingRanking.vue": "winningAndLosingRanking",
   "/src/view/dezhou/userSegmentation/AveragePlayerEarnings/AveragePlayerEarnings.vue": "AveragePlayerEarnings",

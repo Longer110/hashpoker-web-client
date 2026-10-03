@@ -3,6 +3,7 @@ import accountsInfo from "./accountsInfo";
 import advertiseBot from "./advertiseBot";
 import bannedList from "./bannedList";
 import businessReport from "./businessReport";
+import payAddress from "./payAddress";
 
 import club from "./club";
 import clubTable from "./clubTable";
@@ -37,6 +38,7 @@ import otherTotals from "./transferManagement/otherTotals";
 import pumpingRecord from "./transferManagement/pumpingRecord";
 import transferPayList from "./transferManagement/transferPayList";
 import transferWithdrawList from "./transferManagement/transferWithdrawList";
+import withdrawAudit from "./transferManagement/withdrawAudit";
 
 
 export default {
@@ -45,6 +47,7 @@ export default {
   ...advertiseBot,
   ...bannedList,
   ...businessReport,
+  ...payAddress,
   ...club,
   ...clubTable,
   ...clubUser,
@@ -75,4 +78,5 @@ export default {
   ...pumpingRecord,
   ...transferPayList,
   ...transferWithdrawList,
+  ...withdrawAudit,
 }

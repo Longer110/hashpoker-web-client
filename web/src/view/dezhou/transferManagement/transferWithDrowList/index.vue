@@ -86,6 +86,29 @@
           </el-table-column>
           <!-- 提U地址 -->
           <el-table-column align="center" :label="$t('TransferWithdrawList.Table.ToAddress')" prop="ToAddr" min-width="200" />
+          <!-- TxHash -->
+          <el-table-column align="center" :label="$t('TransferWithdrawList.Table.TxHash')" prop="TxHash" min-width="260">
+            <template #default="scope">
+              <span v-if="getTxHash(scope.row)" style="font-family: monospace; font-size: 12px;">
+                {{ truncateHash(getTxHash(scope.row)) }}
+              </span>
+              <span v-else style="color: #909399;">-</span>
+              <div v-if="getTxHash(scope.row)" style="margin-top: 4px;">
+                <el-button
+                  link
+                  type="primary"
+                  size="small"
+                  @click="copyTxHash(getTxHash(scope.row))"
+                >{{ $t('TransferWithdrawList.Actions.Copy') }}</el-button>
+                <el-button
+                  link
+                  type="success"
+                  size="small"
+                  @click="openTxOnExplorer(getTxHash(scope.row))"
+                >{{ $t('TransferWithdrawList.Actions.ViewOnChain') }}</el-button>
+              </div>
+            </template>
+          </el-table-column>
           <!-- 原label: 状态 -->
           <el-table-column align="center" :label="$t('TransferWithdrawList.Table.Status')" prop="Result" min-width="100">
             <template #default="scope">
@@ -127,12 +150,13 @@ import { formatDate } from '@/utils/format'
 import TableSkeleton from '@/components/tableSkeleton/index.vue'
 import { ref, onMounted, watch, onActivated } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { ElMessage } from 'element-plus'
 
 defineOptions({
   name: 'TransferPayList'
 })
 
-useI18n()
+const { t } = useI18n()
 
 const elSearchFormRef = ref()
 
@@ -296,6 +320,56 @@ watch(() => route.query.id, () => {
 onActivated(() => {
   syncFromQuery()           // keep-alive 恢复时也再检查一次
 })
+
+const getTxHash = (row) => {
+  if (!row || typeof row !== 'object') return ''
+  const candidates = [
+    row.TxHash,
+    row.tx_hash,
+    row.Txhash,
+    row.txHash,
+    row.TX_HASH,
+    row.TxId,
+    row.tx_id,
+    row.TxID,
+    row.transaction_hash,
+    row.TransactionHash
+  ]
+  for (const c of candidates) {
+    if (typeof c === 'string' && c.trim() !== '') return c.trim()
+  }
+  return ''
+}
+
+const truncateHash = (hash) => {
+  if (!hash || typeof hash !== 'string') return ''
+  if (hash.length <= 16) return hash
+  return hash.substring(0, 8) + '...' + hash.substring(hash.length - 8)
+}
+
+const copyTxHash = async (text) => {
+  try {
+    if (navigator && navigator.clipboard && navigator.clipboard.writeText) {
+      await navigator.clipboard.writeText(text)
+    } else {
+      const ta = document.createElement('textarea')
+      ta.value = text
+      document.body.appendChild(ta)
+      ta.select()
+      document.execCommand('copy')
+      document.body.removeChild(ta)
+    }
+    ElMessage.success(t('TransferWithdrawList.Actions.CopyOk'))
+  } catch (e) {
+    ElMessage.error(t('TransferWithdrawList.Actions.CopyFail') + '：' + (e?.message || ''))
+  }
+}
+
+const openTxOnExplorer = (hash) => {
+  if (!hash) return
+  const url = `https://tronscan.io/#/transaction/${encodeURIComponent(hash)}`
+  window.open(url, '_blank', 'noopener,noreferrer')
+}
 </script>
 
 <style scoped>

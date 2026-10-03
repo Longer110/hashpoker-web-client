@@ -582,9 +582,9 @@
                 v-model="formData.cardConfigs[index].nCostCustom"
                 :placeholder="$t('HallTableDialog.Placeholder.InputCost', { label: cardConfig.costLabel })"
                 style="width: 240px"
-                :min="0.1"
-                :step="0.1"
-                :precision="2"
+                :min="0.001"
+                :step="0.001"
+                :precision="3"
                 clearable
               />
             </el-form-item>

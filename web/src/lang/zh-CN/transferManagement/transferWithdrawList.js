@@ -17,10 +17,17 @@ export default {
       UserId: '用户ID',
       ActualAmount: '实际到账金额',
       ToAddress: '提U地址',
+      TxHash: 'TxHash',
       Status: '状态',
       Remark: '备注',
       CreatedAt: '创建时间',
       UpdatedAt: '更新时间'
+    },
+    Actions: {
+      Copy: '复制',
+      CopyOk: '已复制到剪贴板',
+      CopyFail: '复制失败',
+      ViewOnChain: '查看链上'
     },
     Status: {
       Success: '成功',
